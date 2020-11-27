@@ -1,0 +1,29 @@
+apply from: "config.gradle"
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        /**gradle*/
+        classpath 'com.android.tools.build:gradle:3.2.0'
+        /**github*/
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.4.1'
+        /**butterknife*/
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+        classpath 'com.jakewharton:butterknife-gradle-plugin:8.8.1'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

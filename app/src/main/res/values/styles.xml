@@ -1,0 +1,13 @@
+<resources>
+
+    <!--应用主题-->
+    <style name="AppTheme" parent="@style/BaseLayerTheme" />
+
+    <!--子项样式(父)-->
+    <style name="base_item_style_base">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/y50</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+</resources>
